@@ -1,0 +1,248 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+body{
+  background:white;
+}
+
+:root{
+  font-family: "Red Hat Display", sans-serif !important;
+}
+
+.logo img{margin-top: 50px;width: 250px;/* float: left; */}
+.content-container{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.checkout-wrapper{
+  background-color: white;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  margin: 30px 0px 50px;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-bottom: 20px solid #80808036;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.heading{
+  padding:15px 20px;
+  color: black;
+  background: #53525221;
+  text-transform: uppercase;
+}
+.heading h3{
+  margin: 0px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: start;
+}
+
+.input-div{
+  display: flex;
+  flex-direction: column;
+  gap:5px;
+  padding: 10px 0px;
+  /* margin: 10px 0px; */
+}
+.input-div input,.input-div select{
+  border: .5px solid #bfbbbb;
+  height: 40px;
+  padding: 0 0 0 10px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 5px;
+  transition: all .3s;
+  border-radius: 6px;
+}
+.input-div textarea{
+border: 1px solid #bfbbbb;
+padding: 0 0 0 10px;
+width: 100%;
+outline: none;
+margin-bottom: 5px;
+transition: all .3s;
+}
+.cardinput{
+border: 1px solid #bfbbbb;
+padding: 15px;
+width: 100%;
+outline: none;
+transition: all .3s;
+}
+
+.input-div label{
+  font-weight: 500;
+}
+.input-div input:focus,.input-div textarea:focus{
+  webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #2196f3b5;
+  box-shadow: 0px 0px 5px #409de8;
+}
+
+
+.customer-p{
+font-size: .85rem;
+color: gray;
+}
+
+.card-type{
+  padding: 0px 6px;
+}
+.card-type p{
+  margin: 0px ;
+  padding: 0px;
+} 
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #F89D00;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 8px #F89D00;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #F89D00;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #F89D00;
+  box-shadow: 0 0 8px #F89D00;
+}
+.submit-btn{
+  padding: 5px 25px;
+  color: white;
+  font-weight: 600;
+  background-color: #E86C1F;
+  border: 2px solid #E86C1F;
+  transition: all .3s;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.submit-btn:hover{
+  color: #e86c1f;
+  background-color: white;
+}
+
+
+ul li::marker {
+  color: black; /* Changes the bullet or number color */
+  font-size: 1.8rem;
+}
+
+.mini-heading{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 10px 0px 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.a{
+  color: rgb(59, 112, 228);
+  cursor: pointer;
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 15px;
+  outline: 0;
+}
+
+
+
+.logo-type{
+  width: 150px;
+  height: 150px;
+  border: none;
+  object-fit: cover;
+}
+
+.flex_1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.logo_label{
+  font-weight: 600;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.logo_type_container{
+  border: .5px solid #00000038;
+  border-radius: 15px;
+  margin: 10px 0px;
+  padding: 15px;
+}
+
+
